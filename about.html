@@ -7,6 +7,7 @@
 <link rel="shortcut icon" href="images/favicon.ico" type="image/type here"/>
 <link rel="stylesheet" href="CSS/Styles.css" media="all" />
 <link rel="stylesheet" href="CSS/app_font.css" media="all" />
+<link rel="stylesheet" href="CSS/main.css" media="all" />
 <script type="text/javascript" src="script/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="script/script.js"></script>
 <script type="text/javascript" src="script/product.js"></script>
@@ -111,13 +112,14 @@ $("document").ready(function(){
     <div class="wrapper" id="home_sec">
     	<div class="main_cnt">
         <h1>About US</h1>
-        <p>Over the years, <span class="lg-c1">RADPING </span><span class="lg-c2">IMAGING PVT LTD </span>has been involved with the Sales and Service provider of World class product to deliver the Indian market and procurement 
-			and distribution of equipment as part of several hospital planning ventures across the globe. 
-            
-            We are the industry leaders in the Bio Medical products of installation and commissioning.</p>
+        <p>We take pleasure in introducing ourselves “<span class="lg-c1">RAD</span><span class="lg-c2">PING</span>” is a  Bio-Medical Servicing Company .We are specializing in Radiology, Cardiology and Critical care for over 17 years’ experiences each, with an understanding of the precise needs of Imaging and Radiology Specialists. The company is mainly providing products & solutions in the healthcare & industrial imaging domain. Continuous Innovation for launch of new products & solutions based on the market needs is the main focus of the company. Visualization products, Workstations, Devices & customized eco-friendly solutions are some of the keys products and solutions offered.. Established in 2017 our Corporate Head Quarters located in Chennai-India.</p>
+        <p>“<span class="lg-c1">RAD</span><span class="lg-c2">PING</span>” involves the proposed diagram for medical equipments, specification, and procurement of medical equipment, taking into account the client’s required level of technology, program planning objectives, and budgeted monies available.
+Our experience ranges from large-scale replacement hospital projects to assisting individual departments with the planning and procurement of costly medical systems.
+Regardless of the size and scope of our work effort, our services provide sound, objective recommendations on how to most efficiently equip a health care facility. Our process is specifically designed to meet the total medical equipment planning needs of a hospital construction project team.</p>
+        <p>The Company awarded by  <b>ISO 9001:2015, CDSCO, AERB,STARTUP INDIA, MSME</b> certification for maintaining best quality assurance product with safety features & innovative research.</p>
          </div>
         <div id="mis_vis">
-        	<h1><span class="lg-c1">RADPING </span>Vision & Mission</h1>
+        	<h1><span class="lg-c1">RAD </span>PING Vision & Mission</h1>
         	<div class="m_v_main_lft1">
             	<img src="Images/abt1.png" class="lft_img" />
             	<label>Customer Commitment</label>
@@ -160,13 +162,17 @@ $("document").ready(function(){
             </div>
         </div>
         <div id="mdul">
-        	<div id="tit"><h1>Our<br> Business<br> Module</h1></div>
-            <div><label>Content drives commerce, and people<br> love a one-stop shop.</label></div>
-            <div><label>Orchestrate Demand<br> Aggression</label></div>
-            <div><label>Envision a Clinical Business Plan.</label></div>
-            <div><label>Setup a Modern Franchise Module & Determine<br> Key Business Partners.</label></div>
+                <div id="tit"><h1>Our<br> Business<br> Module</h1></div>
+                <div><label>Content drives commerce, and people<br> love a one-stop shop.</label></div>
+                <div><label>Orchestrate Demand<br> Aggression</label></div>
+                <div><label>Envision a Clinical Business Plan.</label></div>
+                <div><label>Setup a Modern Franchise Module & Determine<br> Key Business Partners.</label></div>
+            </div>
+        <div id="emp_list">
+        	<h2>Our <span class="lg-c1">RAD</span><span class="lg-c2">PING</span> IMAGING FAMILY</h2>
+        	<iframe id="emp_list_inr" src="employee.html" />
         </div>
-	</div>
+        
 </div>
 <!--<footer>
 	<div class="wrapper">All rights reserved. Copyrights @ Vital Bio Systems.
@@ -180,3 +186,58 @@ $("document").ready(function(){
 </footer>-->
 </body>
 </html>
+<script>
+    $(function() {
+      var showcase = $("#showcase")
+
+      showcase.product( {
+        yPos: 42,
+        yRadius: 48,
+        mirrorOptions: {
+          gap: 12,
+          height: 0.2
+        },
+        buttonLeft: $(".nav > .left"),
+        buttonRight: $(".nav > .right"),
+        autoPlay: true,
+        bringToFront: true,
+        onRendered: showcaseUpdated,
+        onLoaded: function() {
+          showcase.css( 'visibility', 'visible' )
+          showcase.css( 'display', 'none' )
+          showcase.fadeIn( 1500 )
+        }
+      } )
+
+      function showcaseUpdated( showcase ) {
+        var title = $('#item-title').html(
+          $(showcase.nearestItem()).attr( 'alt' )
+        )
+
+        var c = Math.cos((showcase.floatIndex() % 1) * 2 * Math.PI)
+        title.css('opacity', 0.5 + (0.5 * c))
+      }
+
+      // Simulate physical button click effect
+      $('.nav > button').click( function( e ) {
+        var b = $(e.target).addClass( 'down' )
+        setTimeout( function() { b.removeClass( 'down' ) }, 80 )
+      } )
+
+      $(document).keydown( function( e ) {
+        //
+        // More codes: http://www.javascripter.net/faq/keycodes.htm
+        //
+        switch( e.keyCode ) {
+          /* left arrow */
+          case 37:
+            $('.nav > .left').click()
+            break
+
+          /* right arrow */
+          case 39:
+            $('.nav > .right').click()
+        }
+      } )
+    })
+  </script> 

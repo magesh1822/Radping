@@ -113,10 +113,12 @@
 					'transform'			: 'translateX(350px) translateZ(-200px) rotateY(-45deg)'
 				};
 				
-				leftCSS.opacity		= 1;
+				leftCSS.opacity		= 0.3;
 				leftCSS.visibility	= 'visible';
-				rightCSS.opacity	= 1;
+				leftCSS.cursor	= 'none';
+				rightCSS.opacity	= 0.3;
 				rightCSS.visibility	= 'visible';
+				rightCSS.cursor	= 'none';
 			
 			}
 			else if( this.support2d && this.supportTrans ) {
@@ -141,10 +143,12 @@
 					'z-index'			: 999
 				};
 				
-				leftCSS.opacity		= 1;
-				leftCSS.visibility	= 'visible';
-				rightCSS.opacity	= 1;
+				leftCSS.opacity		= 0.3;
+				leftCSS.visibility	= 'visible';				
+				leftCSS.cursor	= 'none';
+				rightCSS.opacity	= 0.3;
 				rightCSS.visibility	= 'visible';
+				rightCSS.cursor	= 'none';
 			
 			}
 			
@@ -261,7 +265,7 @@
 							'-o-transform'		: 'translateX(-350px) translateZ(-200px) rotateY(45deg)',
 							'-ms-transform'		: 'translateX(-350px) translateZ(-200px) rotateY(45deg)',
 							'transform'			: 'translateX(-350px) translateZ(-200px) rotateY(45deg)',
-							'opacity'			: 1,
+							'opacity'			: 0.3,
 							'visibility'		: 'visible'
 						};
 						break;
@@ -272,7 +276,7 @@
 							'-o-transform'		: 'translateX(350px) translateZ(-200px) rotateY(-45deg)',
 							'-ms-transform'		: 'translateX(350px) translateZ(-200px) rotateY(-45deg)',
 							'transform'			: 'translateX(350px) translateZ(-200px) rotateY(-45deg)',
-							'opacity'			: 1,
+							'opacity'			: 0.3,
 							'visibility'		: 'visible'
 						};
 						break;
@@ -322,7 +326,7 @@
 							'-o-transform'		: 'translate(-350px) scale(0.8)',
 							'-ms-transform'		: 'translate(-350px) scale(0.8)',
 							'transform'			: 'translate(-350px) scale(0.8)',
-							'opacity'			: 1,
+							'opacity'			: 0.3,
 							'visibility'		: 'visible'
 						};
 						break;
@@ -333,7 +337,7 @@
 							'-o-transform'		: 'translate(350px) scale(0.8)',
 							'-ms-transform'		: 'translate(350px) scale(0.8)',
 							'transform'			: 'translate(350px) scale(0.8)',
-							'opacity'			: 1,
+							'opacity'			: 0.3,
 							'visibility'		: 'visible'
 						};
 						break;
