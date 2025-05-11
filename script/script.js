@@ -1,5 +1,8 @@
 $(document).ready(function(){
-
+// When the page finishes loading, add a class to hide the loader
+    window.addEventListener("load", function() {
+      document.body.classList.add('loaded');
+    });
 $(document).ready(function(){
 						   
 						   $('#nav-btn').click(function(){
@@ -238,6 +241,12 @@ $(document).ready(function(){
 		$("#pop_u909, #pop_xd, #pop_xa, #pop_kl602, #pop_kl605, #pop_kl702, #pop_247, #pop_oscar, #pop_tango, #pop_basic, #pop_port, #pop_midi, #pop_pro, #pop_airvo, #pop_bubb, #pop_humid, #pop_resus, #pop_bed, #pop_vals, #pop_ans, #pop_n20, #pop_n40, #pop_np").fadeOut();
 	});
 	
+$("#brand").css({"position": "relative", "left": "-100px", "opacity": "0"}).show().animate({left: '0px', opacity: '1'}, "slow");
+$("#banner_sec").css({"position": "relative", "top": "-100px", "opacity": "0"}).show().animate({top: '0px', opacity: '1'}, "slow");
+$("#nav_sec1").css({"position": "relative", "right": "-200px", "opacity": "0"}).show().animate({right: '0px', opacity: '1'}, "slow");
+$(".wrapper").css({"position": "relative", "bottom": "-100px", "opacity": "0"}).show().animate({bottom: '0px', opacity: '1'}, "slow");
+
+	
 	$("ul#prod_tab li").click(function(){
 			$("ul#prod_tab li").removeClass("sel");
 			$(this).addClass("sel");
@@ -248,17 +257,17 @@ $(document).ready(function(){
 			$("#prod_car, #prod_den, #prod_crit, #prod_ser").hide();
 		});
 	
-	$("ul#prod_tab li:nth-child(2)").click(function(){
-			$("#prod_car").css({"position": "relative", "left": "100px", "opacity": "0"}).show().animate({left: '0px', opacity: '1'}, "slow");
-			$("#prod_rad, #prod_den, #prod_crit, #prod_ser").hide();
-		});
+	//$("ul#prod_tab li:nth-child(2)").click(function(){
+	//		$("#prod_car").css({"position": "relative", "left": "100px", "opacity": "0"}).show().animate({left: '0px', opacity: '1'}, "slow");
+	//		$("#prod_rad, #prod_den, #prod_crit, #prod_ser").hide();
+	//	});
 	
-	$("ul#prod_tab li:nth-child(3)").click(function(){
+	$("ul#prod_tab li:nth-child(2)").click(function(){
 			$("#prod_den").css({"position": "relative", "left": "100px", "opacity": "0"}).show().animate({left: '0px', opacity: '1'}, "slow");
 			$("#prod_rad, #prod_car, #prod_crit, #prod_ser").hide();
 		});
 	
-	$("ul#prod_tab li:nth-child(4)").click(function(){
+	$("ul#prod_tab li:nth-child(3)").click(function(){
 			$("#prod_crit").css({"position": "relative", "left": "100px", "opacity": "0"}).show().animate({left: '0px', opacity: '1'}, "slow");
 			$("#prod_rad, #prod_car, #prod_den, #prod_ser").hide();
 		});

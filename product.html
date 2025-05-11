@@ -90,6 +90,9 @@ $("document").ready(function(){
   </script>
 </head>
 <body>
+<div id="loader">
+    <div class="spinner"></div>
+  </div>
 <header>
 <div class="top-gr"></div>
    <div class="wrapper_menu">
@@ -125,15 +128,17 @@ $("document").ready(function(){
         <div class="content_sec">
             <ul id="prod_tab">
             	<li class="sel"><button>Radiology</button></li>
-                <li><button>Cardiology</button></li>
+                <!--<li><button>Cardiology</button></li>-->
                 <li><button>Dental</button></li>
                 <li><button>Critical Care</button></li>
-                <li><button>Product Service</button></li>
+                <!--<li><button>Product Service</button></li>-->
             </ul>
             <div id="prod_main">
             	<div id="prod_rad">
                 	<section id="dg-container" class="dg-container">
                         <div class="dg-wrapper">
+                        	<a href="#" id="p_11"><img src="Images/radiology/mobile.jpg" alt="image01"><div>MOBILE CATHLAB</div></a>
+                        	<a href="#" id="p_11"><img src="Images/radiology/mri.jpg" alt="image01"><div>MRI SCANNER</div></a>
                             <a href="#" id="p_1"><img src="Images/radiology/fixed_digital.jpg" alt="image01"><div>Digital X-Ray Systems</div><button>ClicK here to View More Details</button></a>
                             <a href="#" id="p_2"><img src="Images/radiology/mobile_digital.jpg" alt="image02"><div>Mobile Digital Radiography Systems</div><button>ClicK here to View More Details</button></a>
                             <a href="#" id="p_3"><img src="Images/radiology/c_arm.jpg" alt="image03"><div>C Arm II Tube System</div><button>ClicK here to View More Details</button></a>
@@ -196,16 +201,17 @@ $("document").ready(function(){
                 <div id="prod_den">
                 	<section id="dg-container2" class="dg-container">
                         <div class="dg-wrapper">
-                            <a href="#" id="p_d1"><img src="Images/dental/opg_machine.jpg" alt="image01"><div>OPG Machine</div><button>ClicK here to View More Details</button></a>
-                            <a href="#" id="p_d2"><img src="Images/dental/CBCT.jpg" alt="image02"><div>CBCT Machine</div><button>ClicK here to View More Details</button></a>
-                            <a href="#" id="p_d3"><img src="Images/dental/intra_oral.jpg" alt="image03"><div>Intraoral Scanner</div><button>ClicK here to View More Details</button></a>
-                            <a href="#" id="p_d4"><img src="Images/dental/portable_dental.jpg" alt="image04"><div>Portable dental X-Ray</div><button>ClicK here to View More Details</button></a>
-                            <a href="#" id="p_d5"><img src="Images/dental/dental_chair.jpg" alt="image05"><div>Dental Chairs</div><button>ClicK here to View More Details</button></a>
-                            <a href="#" id="p_d6"><img src="Images/dental/CBCT.jpg" alt="image06"><div>CBCT Machine</div><button>ClicK here to View More Details</button></a>
+                        	<a href="#" id="p_d1"><img src="Images/dental/x53d.jpg" alt="image06"><div>Hyperion X5 3D PAN</div><button>ClicK here to View More Details</button></a>
+                            <a href="#" id="p_d2"><img src="Images/dental/opg_machine.jpg" alt="image01"><div>OPG Machine</div><button>ClicK here to View More Details</button></a>
+                            <a href="#" id="p_d3"><img src="Images/dental/CBCT.jpg" alt="image02"><div>CBCT Machine</div><button>ClicK here to View More Details</button></a>
+                            <a href="#" id="p_d4"><img src="Images/dental/intra_oral.jpg" alt="image03"><div>Intraoral Scanner</div><button>ClicK here to View More Details</button></a>
+                            <a href="#" id="p_d5"><img src="Images/dental/portable_dental.jpg" alt="image04"><div>Portable dental X-Ray</div><button>ClicK here to View More Details</button></a>
+                            <a href="#" id="p_d6"><img src="Images/dental/dental_chair.jpg" alt="image05"><div>Dental Chairs</div><button>ClicK here to View More Details</button></a>
                         </div>
                         <nav>	
                             <span class="dg-prev"><img src="Images/prev_btn.png" class="" /></span>
-                            <span class="dg-next"><img src="Images/next_btn.png" class="" /></span>                        </nav>
+                            <span class="dg-next"><img src="Images/next_btn.png" class="" /></span>
+                        </nav>
                     </section>
                 </div>
                 <div id="prod_crit">
@@ -556,23 +562,91 @@ The A.S.T. Paddle (optional accessory) assures more uniform compression across t
             </div>
     </div>
     <div id="p_d1_prod" class="prod_pop_inr">
-    	<div class="prod_poptit">OPG Machine <button>X</button></div>  
+    	<div class="prod_poptit">Hyperion X5 3D PAN: <button>X</button></div>  
         	<div class="prod_pop_inrcnt">	
-                <p>Radping Imaging Pvt Ltd handles a wide range of dental products. Our OPG dental X-ray machine is a high-end piece of equipment that delivers exceptional image quality.</p>
+                <p>Indicates the device is a 3D Panoramic Imaging System</p>
+                <label>Type 3D Images:</label>
+                <p>Complete examination of the 2 arches in a single scan for adults and children (reduced collimation); Examinations of the maxillary region with maxillary sinuses**; Examination localized in the region of interest.</p>
+                <label>3D (Maximum) theoretical resolution on the patient plane:</label>
+                <p>6.3 lp/mm (Voxel 80 µm)</p>
+                <label>Fields of view on patient (cm):</label>
+                <ul class="prod_pop_list">
+                	<li>DENT and SIN**: 10 (diameter) x 10 (height) 10 (diameter) x 7 (height);</li>
+                	<li>10 (diameter) x 6 (height);</li>
+                	<li>8 (diameter) x 7 (height); 8 (diameter) x 6 (height);</li>
+                	<li>8 (diameter) x 10 (height); 6 (diameter) x 7 (height);</li>
+                	<li>6 (diameter) x 6 (height);</li>
+                </ul>
+                <label>Maximum image data size:</label>
+                <p>720MB</p>
+                <label>Magnification:</label>
+                <p>1 a 1 (isotropic voxel)</p>
+                <label>Scan time: Super HD:</label>
+                <p>16.8 s (Best Quality) Standard: 9.6 s (Regular) Quick Scan: 6.4 s (Low Dose)</p>
+                <label>Estimate of typical effective dose (ICRP 103):</label>
+                <p>FOV:10x10 | 35 µSv (Voxel 160 µm) - 121 µSv (Voxel 80 µm) </p>
+                <p>FOV: 6x6 | 9 µSv (Voxel 160 µm) - 40 µSv (Voxel 80 µm)</p>
+                <p></p>
+                <label>Minimum image display times:</label>
+                <p>15 Second</p>
+                <label>Advanced filters: </label>
+                <p>SMART (Streak Metal Artifact Reduction Technology)</p>
             </div>
     </div>
     <div id="p_d2_prod" class="prod_pop_inr">
-    	<div class="prod_poptit">CBCT<button>X</button></div>  
+    	<div class="prod_poptit">Hyperion X5 2D PAN<button>X</button></div>  
         	<div class="prod_pop_inrcnt">	
-            	<label>3D CBCT Imaging: Advanced Dental Diagnostics</label>
-                <p>We offer high-end 3-in-1 CBCT systems that include 3D CBCT, cephalometry, and 2D imaging capabilities</p>
+            	<label>Indicates the device is a 2D Panoramic Imaging System</label>
+                <label>Type 2D Images:</label>
+                <p>Complete or partial adult and child panoramic imaging*, Orthogonal Panoramic imaging, QuickPAN, MultiPAN, Dentition, Bitewing* Frontal and Lateral (right and left) maxillary sinuses, Temporomandibular Joint (2 x Lateral + 2 x Frontal) open and closed mouth. Teleradiography: Skull AP-PA, LL Short/Long, Standard/Quick; Carpal teleradiography.</p>
+                <label>(Maximum) theoretical resolution on the patient plane:</label>
+                <ul class="prod_pop_list">
+                	<li>2D: 5 - 6.9 lp/mm (Pixel 100-73 µm)</li>                    
+                	<li>CEPH: 5.6 lp/mm (Pixel 89 µm)</li>
+                </ul>
+                <label>Equivalent radiograph size (cm):</label>
+                <ul class="prod_pop_list">
+                	<li>PAN: 26.2 (length) x 14.4 (height)</li>                    
+                	<li>CEPH: 29.2 (length) x 22 (height)</li>
+                </ul>
+                <label>Fields of view on patient (cm):</label>
+                <ul class="prod_pop_list">
+                	<li>PAN: 21 (length) x 11.5 (height)</li>                    
+                	<li>CEPH: 25.8 (length) x 19.4 (height)</li>
+                    <li>PAN Child: 18 (length) x 10 (height)</li>                    
+                	<li>Dentition: 14 (length) x 10 (height)</li>
+                    <li>Bitewing: 16.7 (length) x 7 (height)</li>                    
+                </ul>
+                <label>Maximum image data size: </label>
+                <p>PAN: 7.5 MB (single image) CEPH: 14 MB</p>
+                <label>Magnification:</label>
+                <p>PAN: 1.2 - 1.3 CEPH: 1.13</p>
+                <label>Scan time: PAN:</label>
+                <p>13.7 s (ORTHO); 12.2 s (STD); 6.8 s (Quick Scan) CEPH: 9.9 s (STD); 3.7s (Quick Scan))</p>
+                <label>Estimate of typical effective dose (ICRP 103): PAN: </label>
+                <p>5 - 9 µSv</p>
+                <label>Minimum image display times:</label>
+                <p>RealTime</p>
+                <label>Advanced filters:</label>
+                <p>PiE (Picture image Enhancer) PAN Focus-Free</p>
             </div>
     </div>
     <div id="p_d3_prod" class="prod_pop_inr">
-    	<div class="prod_poptit">Intra oral scanner  <button>X</button></div>  
+    	<div class="prod_poptit">Hyperion X9 Pro CBCT 13*18 FOV<button>X</button></div>  
         	<div class="prod_pop_inrcnt">	
-            	<label>Intraoral Sensor: Advanced Dental Imaging</label>
-                <p>Our intraoral sensor provides fast imaging, reducing processing time. It eliminates the need for developing and fixing, making the process quick and easy. This digital imaging solution offers permanent storage, easy comparison, and diagnosis.</p>
+            	<label>3D Detector:</label>
+                <p>Detector technology - Amorphous silicon - CsI with direct deposition</p>
+                <p>Dynamic range 16 bit (65,535 grey levels)</p>
+                <p>T*ypical scan time 14.4 s</p>
+                <p>Rotation 360°/180°</p>
+                <p>Image voxel size Minimum 75 µm Minimum 68 µm</p>
+                <p>Available FOV sizes (Oxh) - 6x6 - 8x6 - 8x8 - 10x6 - 10x8 6x6 - 8x6 - 8x8 - 10x6 - 10x8 -10x10 - 13x8 - 13x10 - 13x16,</p>
+                <p>Typical image size from 495 MB to 820 MB</p>
+                <p>QuickPan (low dose): Describes a feature that minimizes radiation exposure during panoramic imaging.</p>
+                <p>MultiPAN Function: Suggests the device's ability to perform multiple panoramic scans.</p>
+                <p>MRT (Morphology Recognition Technology): Indicates the use of advanced technology for improved image quality</p>
+                <p>Adjustments on touch panel on machine and/or iPhone/Android Phone 2-speed height drive
+Examination selection Virtual control panel on PC, Windows tablet and/or iPad</p>
             </div>
     </div>
     <div id="p_d4_prod" class="prod_pop_inr">
