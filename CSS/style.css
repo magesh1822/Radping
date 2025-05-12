@@ -92,3 +92,13 @@
 	background-position: top right;
 	margin-left: 10px;
 }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+.dg-wrapper{max-width:350px;}
+.dg-wrapper a{max-width:250px;}
+}
+
+@media (max-width: 575.98px) {
+.dg-wrapper{max-width:350px;}
+.dg-wrapper a{max-width:250px;}
+}
