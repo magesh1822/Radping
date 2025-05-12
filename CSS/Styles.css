@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-body,html{ padding:0; margin:0 auto; background:#eeeeee; width:100%; height:100%;}
+body,html{ padding:0; margin:0 auto; background:#fff; width:100%; height:100%;}
 header{ border-top:0px solid #e80026; border-bottom:5px solid #f48533; box-shadow:2px 2px 5px rgba(0,0,0,0.5); position:fixed; top:0; width:100%; background:#fff; height:70px;  z-index:1000;}
 
 #loader {
@@ -50,13 +50,10 @@ div#brand img{ max-width:100%; max-height:100%;}
 .wrapper_menu{ width:100%; max-width:1920px; min-width:320px; margin:0 auto; display:block; border1:1px solid red;}
 .wrapper{ width:100%;  margin:0 auto; display:block; padding:0; max-width:1366px; min-width:320px; border:0px solid red;}
 
-#nav-btn{ display: none; float: right; margin: 20px; width:40px; height:35px; background:none; border:none; cursor:pointer; padding:0;}
-#nav-btn img{ background:url(../images/menu_icon.png) no-repeat; width:100%; max-width:100%; max-height:100%;}
-#nav-btn img:hover{ box-shadow:0 0 3px rgba(0,0,0,0.5);}
 
 .content_sec{ margin: 30px auto 0 auto; display:block; clear:both;}
 div#nav_sec1{ width:72.5%; display:inline-block; float:left; position:relative; margin:0 0 0 1%; height: 65px; background:url(../images/nav_bg1.png); }
-.menu{ width:100%; display: inline-block; float:left; position:relative; margin:0 0 0 1%; }
+.menu{ width:100%; display: inline-block; float:left; position:relative; margin:0 0 0 1%; z-index:10000; }
 .menu li{ list-style-type: none; float: left;}
 .menu li a{ font: normal 20px zurich; color:#c9b1b1; cursor:pointer; transation: all .3s ease-in-out;  text-decoration: none; padding: 26px 0px; display: block;  width: 150px; text-align: center; transition: all 0.5s ease-in-out; border:0px solid red; }
 .sel1{ background-color:#FF9900; height:65px; margin:1px 0 0 0; border-radius:30px; box-shadow:0 0 5px rgba(0,0,0,0.5); }
@@ -65,7 +62,7 @@ div#nav_sec1{ width:72.5%; display:inline-block; float:left; position:relative; 
 #tab_sel{ position:absolute; bottom:5px; left:0; margin:10px 10px 0 0; border-width:0 10px 10px 10px; border-color:#FF9900 transparent; border-style:solid;}
 #tab_sel::after{ content:""; position:absolute; bottom:-15px; left:-60px; width:120px; height:5px; background-color:#FF9900;}
 #nav-btn{ display: none; float: right; margin: 20px; width:40px; height:35px; background:none; border:none; cursor:pointer; padding:0;}
-#nav-btn img{ background:url(../images/menu_icon.png) no-repeat; width:100%; max-width:100%; max-height:100%;}
+#nav-btn img{ background:url(../Images/menu_icon.png) no-repeat; width:100%; max-width:100%; max-height:100%;}
 #nav-btn img:hover{ box-shadow:0 0 3px rgba(0,0,0,0.5);}
 
 div#main{ padding:0; margin1:0 0 50px 0; position:relative; top:75px; border:0px solid #f00; height:85%; width:100%; margin:0 auto; overflow-y:auto;}
@@ -126,7 +123,7 @@ label {color:#fff; font:normal 18px source; padding:0; margin:0 0 10px 0; text-a
 #clt_inr_rht img{ width:70%; margin:20% 0 0 10%;}
 
 #btm_contant{ position:relative; top:0px; width:97%; margin:0px 0 0 0; padding:20px; border:0px solid red; display:block; float:left; background-color:#FF9900;}
-#btm_contant div{ position:relative; width:30%; margin:0 12px; float:left; border:0px solid red; cursor:pointer; color:#fff;}
+#btm_contant div{ position:relative; width:30%; margin:0 12px; float:left; border:0px solid red; cursor:pointer; color:#fff; display:inline-block;}
 #btm_contant div span{ padding:5px; float:left; background:#fff; border-radius:10px; margin:10px 0 0 20px; width:25px; height:25px;}
 #btm_contant div span img{ width:100%; height:auto;}
 #btm_contant div b{ padding:5px; width:70%; line-height:25px; float:left; margin:0 0 0 30px;}
@@ -145,8 +142,8 @@ div.mid_tab::after{ content:""; width:1px; background-color:#CCCCCC; height:100p
 .main_cnt{ width:90%; display:block; clear:both; padding:15px 0 ; margin:0 auto;}
 .main_cnt h1{ padding:10px 0;}
 
-#mis_vis{ background-color:#fff; width:99.8%; height:auto; margin:0; padding:10px 0 0 0; border:1px solid #fff;}
-#mis_vis h1{ position:relative; left:0; top:20px; margin:0 0 0 10%;}
+#mis_vis{ background-color:#fff; margin:0; padding:10px 0 0 0; border:0px solid red; display:block; clear:both;}
+#mis_vis h1{ position:relative; left:0; top:20px; margin:0 0 0 5%;}
 
 .m_v_main_lft1{ position:relative; top:40px; width:80%; margin:50px auto;}
 .m_v_main_lft1::after{ content:""; position:absolute; top:5px; left:103px; width:50%; height:1px; background-color:#58b3e5;}
@@ -200,7 +197,7 @@ div.mid_tab::after{ content:""; width:1px; background-color:#CCCCCC; height:100p
 .m_v_main_rht4 label{color:#5863e5; font:normal 25px source; text-align:right; display:block; margin:50px 150px 0 0; padding:10px 0 0 0;}
 .m_v_main_rht4 p{color:#737373; font:normal 20px abel; display:block; text-align:left; margin: 0 100px 0 0; width:50%; float:right; height:auto; border-radius:10px; padding:20px; box-shadow:-3px 3px 5px rgba(88,99,229,0.5);}
 
-div#mdul{ margin:0 auto; padding:10px auto; display:block; width:100%; position:relative; float:left; z-index:10000;}
+div#mdul{ margin:0 auto; padding:10px auto; display:block; width:100%; position:relative; float:left; z-index:10000; clear:both;}
 div#mdul div{ margin:auto; padding:0; width:50%; height:100px; text-align:center; display:inline-block; float:left; font:bold 20px abel; color:#fff;}
 div#mdul div label{ position:relative; top:25%;}
 div#mdul div:nth-child(2){ background-color:#abdf61; margin:auto;}
@@ -273,8 +270,8 @@ iframe{ width:80%; height:300px; margin:0 auto; display:block; box-shadow1:5px 5
 #yr_sec{ width:20%; display:inline-block; border:0px solid red; position:relative; left:5%;}
 #yr_sec ul{ padding:0; margin:0;}
 #yr_sec ul#yr_list{ display:block;}
-#yr_sec ul#yr_list li{ list-style:none; padding:0; margin:10px 0; border-radius:0 15px 15px 0; background:#737373; cursor:pointer;}
-#yr_sec ul#yr_list li span{ padding:5px 7px; text-align:center; display:inline-block; background:#fff; font:bold 15px source !important; color:#737373;}
+#yr_sec ul#yr_list li{ list-style:none; padding:0; margin:10px 0; border-radius:0 15px 15px 0; background:#737373; cursor:pointer; width:80%;}
+#yr_sec ul#yr_list li span{ padding:5px 7px; text-align:center; display:inline-block; background:#fff; font:bold 15px source !important; color:#737373; letter-spacing:2px;}
 #yr_sec ul#yr_list li label{ padding:0; margin:0; font:bold 15px abel !important; color:#fff; text-indent:20px; display:inline-block; letter-spacing:5px; width:80%; text-align:center; cursor:pointer;}
 #yr_sec ul#yr_list li:hover{}
 #yr_sec ul#yr_list li:hover span{}
@@ -316,27 +313,42 @@ iframe{ width:80%; height:300px; margin:0 auto; display:block; box-shadow1:5px 5
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   /* styles for tablets */
-  div#nav_sec1{ background:none; overflow:none !important; width:28%; }
+  div#nav_sec1{ background:none; overflow:none !important; width:70%; }
 #tab_sel{ display: none; }
 .menu{ width: 200px; position: absolute; z-index: 999; overflow: none !important; right: 1px; top: 54px; right:20px; background: #fff; display:none; padding:0; margin:0; border:1px solid #e80026; box-shadow: 0px 0px 3px rgba(0,0,0,0.5); }
 .menu li{ list-style-type: none; float: none; border-bottom: 1px dotted #e80026; width: 100%; border-left1:2px solid #ccc; }
 .menu li a{ font: normal 20px zurich; color:#c9b1b1; cursor:pointer; transation: all .3s ease-in-out;  text-decoration: none; padding: 10px 0px; display: block;  width: 150px;  margin: auto; }
 #nav-btn{ display: block;}
+.cont_sec_left{ width:98%;}
+.cont_sec_rgt{ display:none;}
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   /* styles for small tablets */
-div#nav_sec1{ background:none; overflow:none !important; width:28%; }
+div#nav_sec1{ background:none; overflow:none !important; width:70%; }
 #tab_sel{ display: none; }
 .menu{ width: 200px; position: absolute; z-index: 999; overflow: none !important; right: 1px; top: 54px; right:20px; background: #fff;  display: none; padding:0; margin:0; }
 .menu li{ list-style-type: none; float: none; border-bottom: 1px dotted #e80026; width: 100%; }
 .menu li a{ font: normal 20px zurich; color:#c9b1b1; cursor:pointer; transation: all .3s ease-in-out;  text-decoration: none; padding: 10px 0px; display: block;  width: 150px;  margin: auto; }
 #nav-btn{ display: block; }
+.cont_sec_left{ width:98%;}
+.cont_sec_rgt{ display:none;}
+#btm_contant div{ width:45%;}
 }
 
 /* Extra small devices (phones, less than 576px) */
 @media (max-width: 575.98px) {
   /* styles for phones */
+div#nav_sec1{ background:none; overflow:none !important; width:70%; }
+#tab_sel{ display: none; }
+.menu{ width: 200px; position: absolute; z-index: 999; overflow: none !important; right: 1px; top: 54px; right:20px; background: #fff;  display: none; padding:0; margin:0; }
+.menu li{ list-style-type: none; float: none; border-bottom: 1px dotted #e80026; width: 100%; }
+.menu li a{ font: normal 20px zurich; color:#c9b1b1; cursor:pointer; transation: all .3s ease-in-out;  text-decoration: none; padding: 10px 0px; display: block;  width: 150px;  margin: auto; }
+#nav-btn{ display: block; }
+.cont_sec_left{ width:98%;}
+.cont_sec_rgt{ display:none;}
+#clint_logo ul#imageList li{ width:48.5%;}
+#btm_contant div{ width:90%;}
 }
 

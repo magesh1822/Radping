@@ -6,7 +6,7 @@
 .dg-wrapper{
 	width: 100%; border:0px solid red;
 	height:auto;
-	max-width:500px; min-width:320px;
+	max-width:500px; min-width:120px;
 	margin: 0 auto;
 	position: relative;
 	-webkit-transform-style: preserve-3d;
@@ -24,7 +24,7 @@
 .dg-wrapper a{
 	width: 100%; border:0px solid red;
 	height:auto;
-	max-width:500px; min-width:320px;
+	max-width:500px; min-width:120px;
 	display: block;
 	position: absolute;
 	left: 0;
@@ -65,10 +65,11 @@
 .dg-container nav{
 	width: 95%;
 	height:50px;
-	position: absolute;
-	z-index: 1000;
+	margin:10% 0 0 0;
+	position:absolute;
 	top: 35%;
 	left: 1%;
+	z-index: 10000;
 	border:0px solid red;
 }
 .dg-container nav span{
