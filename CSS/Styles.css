@@ -389,6 +389,7 @@ div#nav_sec1{ background:none; overflow:none !important; width:70%; }
 .m_v_main_lft1 p, .m_v_main_lft2 p, .m_v_main_lft3 p, .m_v_main_lft4 p{  margin:0 0 0 130px; width:60%;}
 .m_v_main_rht1 p, .m_v_main_rht2 p, .m_v_main_rht3 p, .m_v_main_rht4 p{ margin: 0 120px 0 0; width:60%;}
 div#mdul div{ width:100%;}
+ul#prod_tab{ position:fixed;}
 ul#prod_tab li{ width:20%;}
 }
 
@@ -415,6 +416,7 @@ div.mid_tab::after{ content:""; width:0px; }
 .m_v_main_lft1 label, .m_v_main_lft2 label, .m_v_main_lft3 label, .m_v_main_lft4 label, .m_v_main_rht1 label, .m_v_main_rht2 label, .m_v_main_rht3 label, .m_v_main_rht4 label{ margin:0px 0 0 10px; text-align:left;}
 .m_v_main_lft1 p, .m_v_main_lft2 p, .m_v_main_lft3 p, .m_v_main_lft4 p, .m_v_main_rht1 p, .m_v_main_rht2 p, .m_v_main_rht3 p, .m_v_main_rht4 p{  margin:0 0 0 10px; width:85%; float:left;}
 div#mdul div{ width:100%;}
+ul#prod_tab{ position:fixed;}
 ul#prod_tab li{ width:30%; margin:0 0 0 1%;}
 .cont_sec_det{ width:55%;}
 #emp_list{ display:none;}
