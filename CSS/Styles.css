@@ -3,6 +3,52 @@
 body,html{ padding:0; margin:0 auto; background:#fff; width:100%; height:100%;}
 header{ border-top:0px solid #e80026; border-bottom:5px solid #f48533; box-shadow:2px 2px 5px rgba(0,0,0,0.5); position:fixed; top:0; width:100%; background:#fff; height:70px;  z-index:1000;}
 
+/* HTML: <div class="loader"></div> */
+.spinner {
+  width: 50px;
+  aspect-ratio: 1;
+  transform: translate(-100%,100%);
+  animation: l14 2s infinite; 
+}
+@keyframes l14 {
+  0%{
+   box-shadow: 
+    50px -50px #B5AC01,
+    50px -50px #ECBA09,
+    50px -50px #0000,
+    50px -50px #0000,
+    50px -50px #0000}
+  25%{
+   box-shadow: 
+    100px -50px #0000,
+    50px  -50px #ECBA09,
+    50px  -50px #E86E1C,
+    50px  -50px #0000,
+    50px  -50px #0000}
+  50%{
+   box-shadow: 
+    100px -50px  #0000,
+    50px  -100px #0000,
+    50px  -50px  #E86E1C,
+    50px  -50px  #D41E45,
+    50px  -50px  #0000}
+  75%{
+   box-shadow: 
+    100px -50px  #0000,
+    50px  -100px #0000,
+     0px  -50px  #0000,
+    50px  -50px  #D41E45,
+    50px  -50px  #B5AC01}
+  100%{
+   box-shadow: 
+    100px -50px  #0000,
+    50px  -100px #0000,
+     0px  -50px  #0000,
+    50px    0px  #0000,
+    50px  -50px  #B5AC01}
+}
+
+
 #loader {
       position: fixed;
       left: 0;
@@ -16,7 +62,7 @@ header{ border-top:0px solid #e80026; border-bottom:5px solid #f48533; box-shado
       z-index: 9999;
     }
 
-    .spinner {
+    .lod {
       width: 50px;
       height: 50px;
       border: 5px solid #ccc;
@@ -180,19 +226,19 @@ div.mid_tab::after{ content:""; width:1px; background-color:#CCCCCC; height:100p
 .m_v_main_rht1 p{color:#737373; font:normal 20px abel; display:block; text-align:left; margin: 0 100px 0 0; width:50%; float:right; height:auto; border-radius:10px; padding:20px; box-shadow:-3px 3px 5px rgba(156,88,229,0.5);}
 
 .m_v_main_rht2{ position:relative; top:40px; right:0; width:80%; margin:140px auto;}
-.m_v_main_rht2::after{ content:""; position:absolute; top:5px; right:103px; width:50%; height:1px; background-color:#e55874;}
+.m_v_main_rht2::after{ content:""; position:absolute; top:8px; right:102px; width:50%; height:1px; background-color:#e55874;}
 .m_v_main_rht2 img{ position:absolute; right:0; top:-70px;}
 .m_v_main_rht2 label{color:#e55874; font:normal 25px source; text-align:right; display:block; margin:50px 150px 0 0; padding:10px 0 0 0;}
 .m_v_main_rht2 p{color:#737373; font:normal 20px abel; display:block; text-align:left; margin: 0 100px 0 0; width:50%; float:right; height:auto; border-radius:10px; padding:20px; box-shadow:-3px 3px 5px rgba(229,88,116,0.5);}
 
 .m_v_main_rht3{ position:relative; top:40px; right:0; width:80%; margin:140px auto;}
-.m_v_main_rht3::after{ content:""; position:absolute; top:5px; right:103px; width:50%; height:1px; background-color:#c6e558;}
+.m_v_main_rht3::after{ content:""; position:absolute; top:12px; right:103px; width:50%; height:1px; background-color:#c6e558;}
 .m_v_main_rht3 img{ position:absolute; right:0; top:-70px;}
 .m_v_main_rht3 label{color:#c6e558; font:normal 25px source; text-align:right; display:block; margin:50px 150px 0 0; padding:10px 0 0 0;}
 .m_v_main_rht3 p{color:#737373; font:normal 20px abel; display:block; text-align:left; margin: 0 100px 0 0; width:50%; float:right; height:auto; border-radius:10px; padding:20px; box-shadow:-3px 3px 5px rgba(198,229,88,0.5);}
 
 .m_v_main_rht4{ position:relative; top:40px; right:0; width:80%; margin:140px auto;}
-.m_v_main_rht4::after{ content:""; position:absolute; top:5px; right:103px; width:50%; height:1px; background-color:#5863e5;}
+.m_v_main_rht4::after{ content:""; position:absolute; top:12px; right:103px; width:50%; height:1px; background-color:#5863e5;}
 .m_v_main_rht4 img{ position:absolute; right:0; top:-70px;}
 .m_v_main_rht4 label{color:#5863e5; font:normal 25px source; text-align:right; display:block; margin:50px 150px 0 0; padding:10px 0 0 0;}
 .m_v_main_rht4 p{color:#737373; font:normal 20px abel; display:block; text-align:left; margin: 0 100px 0 0; width:50%; float:right; height:auto; border-radius:10px; padding:20px; box-shadow:-3px 3px 5px rgba(88,99,229,0.5);}
@@ -340,8 +386,8 @@ div#nav_sec1{ background:none; overflow:none !important; width:70%; }
 .m_v_main_lft1, .m_v_main_lft2, .m_v_main_lft3, .m_v_main_lft4, .m_v_main_rht1, .m_v_main_rht2, .m_v_main_rht3, .m_v_main_rht4{ width:95%;}
 .m_v_main_lft1 label, .m_v_main_lft2 label, .m_v_main_lft3 label, .m_v_main_lft4 label{ margin:0px 0 0 50px;}
 .m_v_main_rht1 label, .m_v_main_rht2 label, .m_v_main_rht3 label, .m_v_main_rht4 label{ margin:50px 50px 0 0;}
-.m_v_main_lft1 p, .m_v_main_lft2 p, .m_v_main_lft3 p, .m_v_main_lft4 p{  margin:0 0 0 100px; width:65%;}
-.m_v_main_rht1 p, .m_v_main_rht2 p, .m_v_main_rht3 p, .m_v_main_rht4 p{ margin: 0 70px 0 0; width:65%;}
+.m_v_main_lft1 p, .m_v_main_lft2 p, .m_v_main_lft3 p, .m_v_main_lft4 p{  margin:0 0 0 130px; width:65%;}
+.m_v_main_rht1 p, .m_v_main_rht2 p, .m_v_main_rht3 p, .m_v_main_rht4 p{ margin: 0 120px 0 0; width:65%;}
 div#mdul div{ width:100%;}
 ul#prod_tab li{ width:20%;}
 }
@@ -363,11 +409,11 @@ div#nav_sec1{ background:none; overflow:none !important; width:70%; }
 div.mid_tab::before{ content:""; width:0px; }
 div.mid_tab::after{ content:""; width:0px; }
 .m_v_main_lft1, .m_v_main_lft2, .m_v_main_lft3, .m_v_main_lft4, .m_v_main_rht1, .m_v_main_rht2, .m_v_main_rht3, .m_v_main_rht4{ width:90%;}
-.m_v_main_lft1 label, .m_v_main_lft2 label, .m_v_main_lft3 label, .m_v_main_lft4 label{ margin:0px 0 0 50px;}
-.m_v_main_rht1 label, .m_v_main_rht2 label, .m_v_main_rht3 label, .m_v_main_rht4 label{ margin:50px 50px 0 0;}
-.m_v_main_lft1 p, .m_v_main_lft2 p, .m_v_main_lft3 p, .m_v_main_lft4 p{  margin:0 0 0 100px; width:75%;}
-.m_v_main_rht1 p, .m_v_main_rht2 p, .m_v_main_rht3 p, .m_v_main_rht4 p{ margin: 0 60px 0 0; width:75%;}
+.m_v_main_rht1 img, .m_v_main_rht2 img, .m_v_main_rht3 img, .m_v_main_rht4 img{ left:0;}
+.m_v_main_lft1 label, .m_v_main_lft2 label, .m_v_main_lft3 label, .m_v_main_lft4 label, .m_v_main_rht1 label, .m_v_main_rht2 label, .m_v_main_rht3 label, .m_v_main_rht4 label{ margin:0px 0 0 100px;}
+.m_v_main_lft1 p, .m_v_main_lft2 p, .m_v_main_lft3 p, .m_v_main_lft4 p, .m_v_main_rht1 p, .m_v_main_rht2 p, .m_v_main_rht3 p, .m_v_main_rht4 p{  margin:0 0 0 100px; width:75%;}
 div#mdul div{ width:100%;}
 ul#prod_tab li{ width:30%;}
+.cont_sec_det{ width:55%;}
 }
 
