@@ -409,8 +409,8 @@ div#nav_sec1{ background:none; overflow:none !important; width:70%; }
 div.mid_tab::before{ content:""; width:0px; }
 div.mid_tab::after{ content:""; width:0px; }
 .m_v_main_lft1, .m_v_main_lft2, .m_v_main_lft3, .m_v_main_lft4, .m_v_main_rht1, .m_v_main_rht2, .m_v_main_rht3, .m_v_main_rht4{ width:98%;}
-.m_v_main_lft1::after, .m_v_main_lft2::after, .m_v_main_lft3::after, .m_v_main_lft4::after, .m_v_main_rht1::after, .m_v_main_rht2::after, .m_v_main_rht3::after, .m_v_main_rht4::after{ content:""; height:1px;}
-.m_v_main_lft2{ top:100px} .m_v_main_lft3{ top:80px;} .m_v_main_lft4{} .m_v_main_rht1{ top:65px;} .m_v_main_rht2{ top:60px;} .m_v_main_rht3{ top:60px;} .m_v_main_rht4{ top:70px;}
+.m_v_main_lft1::after, .m_v_main_lft2::after, .m_v_main_lft3::after, .m_v_main_lft4::after, .m_v_main_rht1::after, .m_v_main_rht2::after, .m_v_main_rht3::after, .m_v_main_rht4::after{ content:""; height:0px;}
+.m_v_main_lft1{ top:20px;} .m_v_main_lft2{ top:120px} .m_v_main_lft3{ top:80px;} .m_v_main_lft4{} .m_v_main_rht1{ top:65px;} .m_v_main_rht2{ top:60px;} .m_v_main_rht3{ top:50px;} .m_v_main_rht4{ top:50px;}
 .m_v_main_lft1 img, .m_v_main_lft2 img, .m_v_main_lft3 img, .m_v_main_lft4 img, .m_v_main_rht1 img, .m_v_main_rht2 img, .m_v_main_rht3 img, .m_v_main_rht4 img{ right:0; top:-50px; display:none;}
 .m_v_main_lft1 label, .m_v_main_lft2 label, .m_v_main_lft3 label, .m_v_main_lft4 label, .m_v_main_rht1 label, .m_v_main_rht2 label, .m_v_main_rht3 label, .m_v_main_rht4 label{ margin:0px 0 0 0px; text-align:left;}
 .m_v_main_lft1 p, .m_v_main_lft2 p, .m_v_main_lft3 p, .m_v_main_lft4 p, .m_v_main_rht1 p, .m_v_main_rht2 p, .m_v_main_rht3 p, .m_v_main_rht4 p{  margin:0 0 0 0px; width:75%; float:left;}
