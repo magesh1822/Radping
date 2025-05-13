@@ -109,4 +109,5 @@
 @media (max-width: 575.98px) {
 .dg-container{ display:none;}
 .contain_low_scr{ display:block;}
+.contain_low_scr div.sc_prod{ width:48%;}
 }
