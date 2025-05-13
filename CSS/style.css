@@ -94,11 +94,13 @@
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-.dg-wrapper{max-width:350px;}
-.dg-wrapper a{max-width:250px;}
+.dg-wrapper{max-width:300px; width:200px;}
+.dg-wrapper a{max-width:250px; width:100%;}
+.dg-wrapper a img{ width:200px; height:auto;}
 }
 
 @media (max-width: 575.98px) {
-.dg-wrapper{max-width:350px;}
-.dg-wrapper a{max-width:250px;}
+.dg-wrapper{max-width:250px; width:150px;}
+.dg-wrapper a{max-width:200px; width:100%;}
+.dg-wrapper a img{ width:150px; height:auto;}
 }

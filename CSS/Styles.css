@@ -81,7 +81,7 @@ label {color:#fff; font:normal 18px source; padding:0; margin:0 0 10px 0; text-a
 .hom_left{ position:relative; float:left; display:inline-block; width:92%; padding:0; margin:0 50px; border:0px solid red;}
 .hom_right{ position:relative; float:left; display:inline-block; width:24%; padding:0; margin:0; border:0px solid red;}
 
-#blog_clint{ padding:0; margin:0 50px; border:0px solid red; clear:both; width:92%;}
+#blog_clint{ padding:0; margin:0 50px; border:0px solid red; clear:both; width:92%; display:none;}
 #blog_sec{ display:inline-block; width:72%; height:350px; border:0px solid red; float:left;}
 #blog_sec:hover1{ background-color:#FFFFFF; opacity:50%;}
 .blog_head{color:#f48633; font:normal 25px zurich; padding:0; margin:0 0 10px 0; text-align:justify; animation: prg 1s ease 1;}
@@ -243,11 +243,12 @@ div.prod1 div img{ width:100%; height:auto; max-width:500px; min-width:200px;}
 .cont_sec_rgt{ border:0px solid blue; width:49.5%; padding:0; margin:0; float:left;}
 
 .cont_sec{ width:95%; float:left;}
-.cont_sec span{}
-.cont_sec span::after{ content:""; width:80px; height:80px; margin:30px 20px; border-radius:50%; background-color1:#CC3300; display:block; float:left; scale:1 50%; box-shadow:0px 10px 20px rgba(0,0,0,0.1);}
-.cont_sec span img{ margin:0px auto; padding:0; width:50px; height:50px; z-index:1000; position:relative; left:-85px; top:20px}
-.cont_sec h2{ font:bold 20px source; color:#CC3300; margin:35px 0 10px 20px; display:inline-block;}
+.cont_sec_img{ position:relative; display:inline-block; float:left;}
+.cont_sec_img span{width:80px; height:80px; margin:30px 20px; border-radius:50%; background-color1:#CC3300; display:block; float:left; scale:1 50%; box-shadow:0px 10px 20px rgba(0,0,0,0.1);}
+.cont_sec_img span img{margin:0px auto; padding:0; width:60px; height:100px; position:relative; left:10px; top:-40px;}
+.cont_sec h2{ font:bold 20px source; color:#CC3300; display:inline-block;}
 .cont_sec label{font:normal 18px abel; color:#666666; display:block;}
+.cont_sec_det{ display:inline-block; float:left;}
 
 .cont_sec_rgt h2{ font:bold 20px source; color:#CC3300; margin:50px 0 10px 20px;}
 iframe{ width:80%; height:300px; margin:0 auto; display:block; box-shadow1:5px 5px 10px rgba(0,0,0,0.2);}
@@ -315,7 +316,7 @@ iframe{ width:80%; height:300px; margin:0 auto; display:block; box-shadow1:5px 5
   /* styles for tablets */
   div#nav_sec1{ background:none; overflow:none !important; width:70%; }
 #tab_sel{ display: none; }
-.menu{ width: 200px; position: absolute; z-index: 999; overflow: none !important; right: 1px; top: 54px; right:20px; background: #fff; display:none; padding:0; margin:0; border:1px solid #e80026; box-shadow: 0px 0px 3px rgba(0,0,0,0.5); }
+.menu{ width: 200px; position: absolute; z-index: 10000; overflow: none !important; right: 1px; top: 54px; right:20px; background: #fff; display:none; padding:0; margin:0; border:1px solid #e80026; box-shadow: 0px 0px 3px rgba(0,0,0,0.5); }
 .menu li{ list-style-type: none; float: none; border-bottom: 1px dotted #e80026; width: 100%; border-left1:2px solid #ccc; }
 .menu li a{ font: normal 20px zurich; color:#c9b1b1; cursor:pointer; transation: all .3s ease-in-out;  text-decoration: none; padding: 10px 0px; display: block;  width: 150px;  margin: auto; }
 #nav-btn{ display: block;}
@@ -328,7 +329,7 @@ iframe{ width:80%; height:300px; margin:0 auto; display:block; box-shadow1:5px 5
   /* styles for small tablets */
 div#nav_sec1{ background:none; overflow:none !important; width:70%; }
 #tab_sel{ display: none; }
-.menu{ width: 200px; position: absolute; z-index: 999; overflow: none !important; right: 1px; top: 54px; right:20px; background: #fff;  display: none; padding:0; margin:0; }
+.menu{ width: 200px; position: absolute; z-index: 10000; overflow: none !important; right: 1px; top: 54px; right:20px; background: #fff;  display: none; padding:0; margin:0; }
 .menu li{ list-style-type: none; float: none; border-bottom: 1px dotted #e80026; width: 100%; }
 .menu li a{ font: normal 20px zurich; color:#c9b1b1; cursor:pointer; transation: all .3s ease-in-out;  text-decoration: none; padding: 10px 0px; display: block;  width: 150px;  margin: auto; }
 #nav-btn{ display: block; }
@@ -339,8 +340,8 @@ div#nav_sec1{ background:none; overflow:none !important; width:70%; }
 .m_v_main_lft1, .m_v_main_lft2, .m_v_main_lft3, .m_v_main_lft4, .m_v_main_rht1, .m_v_main_rht2, .m_v_main_rht3, .m_v_main_rht4{ width:95%;}
 .m_v_main_lft1 label, .m_v_main_lft2 label, .m_v_main_lft3 label, .m_v_main_lft4 label{ margin:0px 0 0 50px;}
 .m_v_main_rht1 label, .m_v_main_rht2 label, .m_v_main_rht3 label, .m_v_main_rht4 label{ margin:50px 50px 0 0;}
-.m_v_main_lft1 p, .m_v_main_lft2 p, .m_v_main_lft3 p, .m_v_main_lft4 p{  margin:0 0 0 80px; width:75%;}
-.m_v_main_rht1 p, .m_v_main_rht2 p, .m_v_main_rht3 p, .m_v_main_rht4 p{ margin: 0 40px 0 0; width:75%;}
+.m_v_main_lft1 p, .m_v_main_lft2 p, .m_v_main_lft3 p, .m_v_main_lft4 p{  margin:0 0 0 100px; width:65%;}
+.m_v_main_rht1 p, .m_v_main_rht2 p, .m_v_main_rht3 p, .m_v_main_rht4 p{ margin: 0 70px 0 0; width:65%;}
 div#mdul div{ width:100%;}
 ul#prod_tab li{ width:20%;}
 }
@@ -361,12 +362,12 @@ div#nav_sec1{ background:none; overflow:none !important; width:70%; }
 #btm_contant div b{ width:60%}
 div.mid_tab::before{ content:""; width:0px; }
 div.mid_tab::after{ content:""; width:0px; }
-.m_v_main_lft1, .m_v_main_lft2, .m_v_main_lft3, .m_v_main_lft4, .m_v_main_rht1, .m_v_main_rht2, .m_v_main_rht3, .m_v_main_rht4{ width:95%;}
+.m_v_main_lft1, .m_v_main_lft2, .m_v_main_lft3, .m_v_main_lft4, .m_v_main_rht1, .m_v_main_rht2, .m_v_main_rht3, .m_v_main_rht4{ width:90%;}
 .m_v_main_lft1 label, .m_v_main_lft2 label, .m_v_main_lft3 label, .m_v_main_lft4 label{ margin:0px 0 0 50px;}
 .m_v_main_rht1 label, .m_v_main_rht2 label, .m_v_main_rht3 label, .m_v_main_rht4 label{ margin:50px 50px 0 0;}
-.m_v_main_lft1 p, .m_v_main_lft2 p, .m_v_main_lft3 p, .m_v_main_lft4 p{  margin:0 0 0 80px; width:85%;}
-.m_v_main_rht1 p, .m_v_main_rht2 p, .m_v_main_rht3 p, .m_v_main_rht4 p{ margin: 0 40px 0 0; width:85%;}
+.m_v_main_lft1 p, .m_v_main_lft2 p, .m_v_main_lft3 p, .m_v_main_lft4 p{  margin:0 0 0 100px; width:75%;}
+.m_v_main_rht1 p, .m_v_main_rht2 p, .m_v_main_rht3 p, .m_v_main_rht4 p{ margin: 0 60px 0 0; width:75%;}
 div#mdul div{ width:100%;}
-ul#prod_tab li{ width:25%;}
+ul#prod_tab li{ width:30%;}
 }
 
