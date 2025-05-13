@@ -54,6 +54,7 @@
 	display: none;
 	position: absolute;
 	border:0px solid red;
+	white-space:nowrap;
 }
 .dg-wrapper a button{ position:absolute; top:50%; left:0; width:100%; text-align:center; padding:10px 0; background-color:rgba(250, 187, 141, 0.7); border:none; font:bold 20px source; cursor:pointer; opacity:0; transition: all 0.8s ease-in-out;}
 
@@ -94,13 +95,13 @@
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-.dg-wrapper{max-width:300px; width:200px;}
-.dg-wrapper a{max-width:250px; width:100%;}
-.dg-wrapper a img{ width:200px; height:auto;}
+.dg-wrapper{max-width:400px; width:200px;}
+.dg-wrapper a{max-width:400px; width:100%;}
+.dg-wrapper a img{ width:350px; height:auto;}
 }
 
 @media (max-width: 575.98px) {
-.dg-wrapper{max-width:250px; width:150px;}
-.dg-wrapper a{max-width:200px; width:100%;}
-.dg-wrapper a img{ width:150px; height:auto;}
+.dg-wrapper{max-width:350px; width:150px;}
+.dg-wrapper a{max-width:350px; width:100%;}
+.dg-wrapper a img{ width:250px; height:auto;}
 }
