@@ -94,7 +94,7 @@
 	margin-left: 10px;
 }
 
-.contain_low_scr{ width:95%; display:block; clear:both; margin:0 auto; padding:0; display:none;}
+.contain_low_scr{ width:95%; display:block; clear:both; margin:0 auto; padding:0; display:block;}
 .contain_low_scr div.sc_prod{ width:30%; position:relative; padding:0; margin:10px 10px 50px 10px; border:0px solid red; display:inline-block; border-top:2px solid #f48533;}
 .contain_low_scr div.sc_prod a{ width:100%; max-width:300px; height:auto;}
 .contain_low_scr div.sc_prod a img{ width:100%; height:auto; box-shadow:0 0 10px rgba(0,0,0,0.2);}
