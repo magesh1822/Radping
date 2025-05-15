@@ -403,12 +403,13 @@ ul#prod_tab{ }
 ul#prod_tab li{ width:20%;}
 #blog_sec{ width:95%;}
 #client_tell_sec{ width:95%;}
-div#mdul div#tit{ width:300px; height:300px; right:-40%;}
+div#mdul div#tit{ width:100%; height:50px; position:relative; border-radius:0; margin:10px 0; padding:0; display:block; border:1px solid #f48533; background-color:#f48533;background-image:none;}
 }
 
 /* Extra small devices (phones, less than 576px) */
 @media (max-width: 575.98px) {
   /* styles for phones */
+  div#brand{ margin-top:20px;}
 div#nav_sec1{ background:none; overflow:none !important; width:65%; }
 #tab_sel{ display: none; }
 .menu{ width: 200px; position: absolute; z-index: 10010; overflow: none !important; right: 1px; top: 54px; right:20px; background: #fff;  display: none; padding:0; margin:0; }
@@ -432,9 +433,9 @@ div#mdul div{ width:100%;}
 ul#prod_tab{}
 ul#prod_tab li{ width:30%; margin:0 0 0 1%;}
 .cont_sec_det{ width:55%;}
-#emp_list{ display:none;}
+#emp_list{ display:block;}
 #blog_sec{ width:95%;}
 #client_tell_sec{ width:95%;}
-div#mdul div#tit{ width:300px; height:300px; right:-40%;}
+div#mdul div#tit{ width:100%; height:50px; position:relative; border-radius:0; margin:10px 0; padding:0; display:block; border:1px solid #f48533; background-color:#f48533;background-image:none;}
 }
 
