@@ -403,7 +403,10 @@ ul#prod_tab{ }
 ul#prod_tab li{ width:20%;}
 #blog_sec{ width:95%;}
 #client_tell_sec{ width:95%;}
-div#mdul div#tit{ width:100%; height:50px; position:relative; border-radius:0; margin:10px 0; padding:0; display:block; border:1px solid #f48533; background-color:#f48533;background-image:none;}
+div#mdul div#tit{ width:100%; height:50px; position:relative; left:0; top:0; border-radius:0; margin:10px 0; padding:0; display:block; border:1px solid #f48533; background-color:#f48533;background-image:none; display:none;}
+ul.emp_shuffleList li label{ margin:10px 0;}
+ul.emp_shuffleList li span{ margin:10px 0;}
+ul.emp_shuffleList li p{ margin:0 15px;}
 }
 
 /* Extra small devices (phones, less than 576px) */
@@ -436,6 +439,11 @@ ul#prod_tab li{ width:30%; margin:0 0 0 1%;}
 #emp_list{ display:block;}
 #blog_sec{ width:95%;}
 #client_tell_sec{ width:95%;}
-div#mdul div#tit{ width:100%; height:50px; position:relative; border-radius:0; margin:10px 0; padding:0; display:block; border:1px solid #f48533; background-color:#f48533;background-image:none;}
+div#mdul div#tit{ width:100%; height:50px; position:relative; left:0; top:0; border-radius:0; margin:10px 0; padding:0; display:block; border:1px solid #f48533; background-color:#f48533;background-image:none; display:none;}
+ul.emp_shuffleList li div.emp_imgsec{ width:70%; margin:0 auto;}
+ul.emp_shuffleList li div.emp_detailsec{ width:90%;}
+ul.emp_shuffleList li label{ margin:10px 0;}
+ul.emp_shuffleList li span{ margin:10px 0;}
+ul.emp_shuffleList li p{ margin:0 15px;}
 }
 
