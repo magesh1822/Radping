@@ -104,10 +104,11 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
 .dg-container{ display:none;}
 .contain_low_scr{ display:block;}
+.contain_low_scr div.sc_prod{ width:45%;}
 }
 
 @media (max-width: 575.98px) {
 .dg-container{ display:none;}
 .contain_low_scr{ display:block;}
-.contain_low_scr div.sc_prod{ width:45%;}
+.contain_low_scr div.sc_prod{ width:90%;}
 }
