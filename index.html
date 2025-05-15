@@ -128,29 +128,49 @@ $("document").ready(function(){
             <div id="blog_clint">
             	<div id="blog_sec">
                 	<div class="blog_head">Recent Blogs</div>
-                	<div class="blg_inr_sec">
-                    	<div id="blog_btn_left"><span></span></div>
-                    	<div id="blog_inr">
-                        	<div class="blog_inr1">
-                            	<div class="blg_title">Medical Equipment</div>
-                                <img src="Images/client.jpg" class=""/>
-                        <p>Our experience ranges from large-scale replacement hospital projects to assisting individual departments with the planning and procurement of costly medical systems.</p>
-                        <a href="#">View More . . . </a>
-                            </div>
-                            <div class="blog_inr1">
-                            	<div class="blg_title">Medical Equipment</div>
-                                <img src="Images/client.jpg" class=""/>
-                        <p>Our experience ranges from large-scale replacement hospital projects to assisting individual departments with the planning and procurement of costly medical systems.</p>
-                        <a href="#">View More . . . </a>
-                            </div>
-                            <div class="blog_inr1">
-                            	<div class="blg_title">Medical Equipment</div>
-                                <img src="Images/client.jpg" class=""/>
-                        <p>Our experience ranges from large-scale replacement hospital projects to assisting individual departments with the planning and procurement of costly medical systems.</p>
-                        <a href="#">View More . . . </a>
-                            </div>
+                    <div id="blogsec_container">
+                    	<button class="btn left" onclick="scrollList('left')">&#8592;</button>
+                        <div class="blogsec_scroll" id="blogsec_scr">
+                        	<ul id="blogsec_ul">
+                            	<li>
+                                	<img src="Images/client.jpg" class=""/>
+                                    <div class="blg_title">Medical Equipment</div>
+                                    <p>Our experience ranges from large-scale replacement hospital projects to assisting individual departments with the planning and procurement of costly medical systems.</p>
+                                    <a href="#">Read More ... </a>
+                                </li>
+                                <li>
+                                	<img src="Images/client.jpg" class=""/>
+                                    <div class="blg_title">Medical Equipment</div>
+                                    <p>Our experience ranges from large-scale replacement hospital projects to assisting individual departments with the planning and procurement of costly medical systems.</p>
+                                    <a href="#">Read More ... </a>
+                                </li>
+                                <li>
+                                	<img src="Images/client.jpg" class=""/>
+                                    <div class="blg_title">Medical Equipment</div>
+                                    <p>Our experience ranges from large-scale replacement hospital projects to assisting individual departments with the planning and procurement of costly medical systems.</p>
+                                    <a href="#">Read More ... </a>
+                                </li>
+                                <li>
+                                	<img src="Images/client.jpg" class=""/>
+                                    <div class="blg_title">Medical Equipment</div>
+                                    <p>Our experience ranges from large-scale replacement hospital projects to assisting individual departments with the planning and procurement of costly medical systems.</p>
+                                    <a href="#">Read More ... </a>
+                                </li>
+                                <li>
+                                	<img src="Images/client.jpg" class=""/>
+                                    <div class="blg_title">Medical Equipment</div>
+                                    <p>Our experience ranges from large-scale replacement hospital projects to assisting individual departments with the planning and procurement of costly medical systems.</p>
+                                    <a href="#">Read More ... </a>
+                                </li>
+                                <li>
+                                	<img src="Images/client.jpg" class=""/>
+                                    <div class="blg_title">Medical Equipment</div>
+                                    <p>Our experience ranges from large-scale replacement hospital projects to assisting individual departments with the planning and procurement of costly medical systems.</p>
+                                    <a href="#">Read More ... </a>
+                                </li>
+                            </ul>
                         </div>
-                        <div id="blog_btn_right"><span></span></div>
+                        <button class="btn right" onclick="scrollList('right')">&#8594;</button>
                     </div>
                 </div>
                 <div id="client_tell_sec">
@@ -165,6 +185,12 @@ $("document").ready(function(){
                         <li>
                         	<img src="Images/users.png" class="#">
                             <label>New Client Name	</label>
+                            <p>Client Comments will appears in this places as per the client tell comments.</p>
+                            <span>Posted Date and Time</span>
+                        </li>
+                        <li>
+                        	<img src="Images/users.png" class="#">
+                            <label>Client Name</label>
                             <p>Client Comments will appears in this places as per the client tell comments.</p>
                             <span>Posted Date and Time</span>
                         </li>
@@ -315,4 +341,16 @@ $(document).ready(function () {
   // Auto-scroll every 3 seconds
   setInterval(scrollNext, 3000);
 });
+</script>
+<script>
+  const scrollWrapper = document.getElementById('blogsec_scr');
+  const scrollAmount = 200; // pixels per click
+
+  function scrollList(direction) {
+    if (direction === 'left') {
+      scrollWrapper.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    } else {
+      scrollWrapper.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+  }
 </script>
