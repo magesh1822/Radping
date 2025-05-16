@@ -240,14 +240,14 @@ div.mid_tab::after{ content:""; width:1px; background-color:#CCCCCC; height:100p
 
 div#mdul{ margin:0 auto; padding:10px auto; display:block; width:100%; position:relative; float:left; z-index:10000; clear:both;}
 div#mdul div{ margin:auto; padding:0; width:50%; height:100px; text-align:center; display:inline-block; float:left; font:bold 20px abel; color:#fff;}
-div#mdul div label{ position:relative; top:25%;}
+div#mdul div label{ position:relative; top:25%; width:50%; margin:0 auto; display:block; text-align:center}
 div#mdul div:nth-child(2){ background-color:#abdf61; margin:auto;}
 div#mdul div:nth-child(3){ background-color:#6190df;}
 div#mdul div:nth-child(4){ background-color:#d561df;}
 div#mdul div:nth-child(5){ background-color:#df6173;}
 div#mdul div#tit{ position:absolute; top:25px; left:44.3%; height:150px; width:150px; border-radius:50%; margin:0; 
 			   background-image:radial-gradient(#fb9d56 0%, #f48533 62%, #ccc 63%, #fff 67%, #fff 90%, #fb9d56 90%, #fb9d56 95%, #ccc 95%, #fff 100%); border:3px solid #f48533;}
-div#mdul div#tit h1{ color:#fff; margin:auto; margin:25px 0 0 0;}
+div#mdul div#tit h1{ color:#fff; margin:25px 0 0 0;}
 
 
 h1{ padding:0; margin:0; color:#f48633; font:normal 25px zurich;}
@@ -306,7 +306,7 @@ div.prod1 div img{ width:100%; height:auto; max-width:500px; min-width:200px;}
 .cont_sec label{font:normal 18px abel; color:#666666; display:block;}
 .cont_sec_det{ display:inline-block; float:left;}
 
-.cont_sec_rgt h2{ font:bold 20px source; color:#CC3300; margin:50px 0 10px 20px;}
+.cont_sec_rgt h2{ font:bold 20px source; color:#CC3300; margin:10px 0 10px 20px;}
 iframe{ width:80%; height:300px; margin:0 auto; display:block; box-shadow1:5px 5px 10px rgba(0,0,0,0.2);}
 .cont_sec_rgt img{ width:30%; height:auto; margin:25px auto; padding:; display:block;}
 
@@ -365,6 +365,10 @@ iframe{ width:80%; height:300px; margin:0 auto; display:block; box-shadow1:5px 5
   /* styles for small desktops */
 .menu li a{ width:125px;}
 #tab_sel::after{ content:""; bottom:-15px; left:-60px; width:120px; height:5px;}
+#blog_sec{ width:60%;}
+#client_tell_sec{ width:38%;}
+div#mdul div#tit{ left:43%;}
+div#mdul div label{ top:15px; width:60%;}
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -372,12 +376,22 @@ iframe{ width:80%; height:300px; margin:0 auto; display:block; box-shadow1:5px 5
   /* styles for tablets */
   div#nav_sec1{ background:none; overflow:none !important; width:70%; }
 #tab_sel{ display: none; }
-.menu{ width: 200px; position: absolute; z-index: 10010; overflow: none !important; right: 1px; top: 54px; right:20px; background: #fff; display:none; padding:0; margin:0; border:1px solid #e80026; box-shadow: 0px 0px 3px rgba(0,0,0,0.5); }
+.menu{ width: 200px; position: absolute; z-index: 15000; overflow: none !important; right: 1px; top: 54px; right:20px; background: #fff; display:none; padding:0; margin:0; border:1px solid #e80026; box-shadow: 0px 0px 3px rgba(0,0,0,0.5); }
 .menu li{ list-style-type: none; float: none; border-bottom: 1px dotted #e80026; width: 100%; border-left1:2px solid #ccc; }
 .menu li a{ font: normal 20px zurich; color:#c9b1b1; cursor:pointer; transation: all .3s ease-in-out;  text-decoration: none; padding: 10px 0px; display: block;  width: 150px;  margin: auto; }
 #nav-btn{ display: block;}
 .cont_sec_left{ width:98%;}
 .cont_sec_rgt{ display:none;}
+#blog_sec{ width:95%;}
+#client_tell_sec{ width:95%;}
+.m_v_main_lft1, .m_v_main_lft2, .m_v_main_lft3, .m_v_main_lft4, .m_v_main_rht1, .m_v_main_rht2, .m_v_main_rht3, .m_v_main_rht4{ width:95%;}
+.m_v_main_lft1 label, .m_v_main_lft2 label, .m_v_main_lft3 label, .m_v_main_lft4 label{ margin:0px 0 0 100px;}
+.m_v_main_rht1 label, .m_v_main_rht2 label, .m_v_main_rht3 label, .m_v_main_rht4 label{ margin:50px 120px 0 0;}
+.m_v_main_lft1 p, .m_v_main_lft2 p, .m_v_main_lft3 p, .m_v_main_lft4 p{  margin:0 0 0 130px; width:60%;}
+.m_v_main_rht1 p, .m_v_main_rht2 p, .m_v_main_rht3 p, .m_v_main_rht4 p{ margin: 0 120px 0 0; width:60%;}
+div#mdul div#tit{ left:40%; top:25px;}
+div#mdul div label{ top:15px; width:60%;}
+
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -385,7 +399,7 @@ iframe{ width:80%; height:300px; margin:0 auto; display:block; box-shadow1:5px 5
   /* styles for small tablets */
 div#nav_sec1{ background:none; overflow:none !important; width:70%; }
 #tab_sel{ display: none; }
-.menu{ width: 200px; position: absolute; z-index: 10010; overflow: none !important; right: 1px; top: 54px; right:20px; background: #fff;  display: none; padding:0; margin:0; }
+.menu{ width: 200px; position: absolute; z-index: 10110; overflow: none !important; right: 1px; top: 54px; right:20px; background: #fff;  display: none; padding:0; margin:0; }
 .menu li{ list-style-type: none; float: none; border-bottom: 1px dotted #e80026; width: 100%; }
 .menu li a{ font: normal 20px zurich; color:#c9b1b1; cursor:pointer; transation: all .3s ease-in-out;  text-decoration: none; padding: 10px 0px; display: block;  width: 150px;  margin: auto; }
 #nav-btn{ display: block; }
@@ -403,7 +417,9 @@ ul#prod_tab{ }
 ul#prod_tab li{ width:20%;}
 #blog_sec{ width:95%;}
 #client_tell_sec{ width:95%;}
-div#mdul div#tit{ width:100%; height:50px; position:relative; left:0; top:0; border-radius:0; margin:10px 0; padding:0; display:block; border:1px solid #f48533; background-color:#f48533;background-image:none; display:none;}
+div#mdul div#tit{ width:30%; height:300px; position:absolute; left:-2px; top:12%; border-radius:0; margin:0; padding:0; display:block; border:2px solid #fff; background-color:#f48533;background-image:none; border-radius:0 20px 20px 0;}
+div#mdul div#tit h1{ margin:90% 0 0 0;}
+div#mdul div label{ top:15px; left:15%; width:60%;}
 ul.emp_shuffleList li label{ margin:10px 0;}
 ul.emp_shuffleList li span{ margin:10px 0;}
 ul.emp_shuffleList li p{ margin:0 15px;}
@@ -439,7 +455,9 @@ ul#prod_tab li{ width:30%; margin:0 0 0 1%;}
 #emp_list{ display:block;}
 #blog_sec{ width:95%;}
 #client_tell_sec{ width:95%;}
-div#mdul div#tit{ width:100%; height:50px; position:relative; left:0; top:0; border-radius:0; margin:10px 0; padding:0; display:block; border:1px solid #f48533; background-color:#f48533;background-image:none; display:none;}
+div#mdul div#tit{ width:30%; height:300px; position:absolute; left:-2px; top:12%; border-radius:0; margin:0; padding:0; display:block; border:2px solid #fff; background-color:#f48533;background-image:none; border-radius:0 20px 20px 0;}
+div#mdul div#tit h1{ margin:90% 0 0 0;}
+div#mdul div label{ top:15px; left:15%; width:60%;}
 ul.emp_shuffleList li div.emp_imgsec{ width:80% !important; margin:0 auto; display:block}
 ul.emp_shuffleList li div.emp_detailsec{ width:90%;}
 ul.emp_shuffleList li label{ margin:10px 0;}
