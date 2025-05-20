@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="CSS/Styles.css" media="all" />
 <link rel="stylesheet" href="CSS/app_font.css" media="all" />
 <link rel="stylesheet" href="CSS/main.css" media="all" />
+<link rel='stylesheet' id='camera-css'  href='CSS/camera.css' type='text/css' media='all'> 
 <script type="text/javascript" src="script/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="script/script.js"></script>
 <script type="text/javascript" src="script/product.js"></script>
@@ -54,28 +55,27 @@ $("document").ready(function(){
 });
 </script>
 <script type='text/javascript' src='script/jquery.mobile.customized.min.js'></script>
-<script type='text/javascript' src='script/jquery.easing.1.3.js'></script>
+<script type='text/javascript' src='script/jquery.easing.1.3.js'></script> 
+<script type='text/javascript' src='script/camera.js'></script> 
+    
+    <script>
+		jQuery(function(){
+			
+			jQuery('#camera_wrap_1').camera({
+				thumbnails: true
 
-<!-- Skitter Styles -->
-  <link href="CSS/skitter.styles.css" type="text/css" media="all" rel="stylesheet" />
-  
-  <!-- Skitter JS -->
-  <script type="text/javascript" language="javascript" src="script/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" language="javascript" src="script/jquery.easing.1.3.js"></script>
-  <script type="text/javascript" language="javascript" src="script/jquery.skitter.min.js"></script>
-  
-  <!-- Init Skitter -->
-  <script type="text/javascript" language="javascript">
-    $(document).ready(function() {
-      $('.box_skitter_large').skitter({
-        theme: 'clean',
-        numbers_align: 'center',
-        progressbar: true, 
-        dots: true, 
-        preview: true
-      });
-    });
-  </script>
+			});
+
+			jQuery('#camera_wrap_2').camera({
+				height: '400px',
+				loader: 'bar',
+				pagination: false,
+				thumbnails: true
+			});
+			
+		});
+		
+	</script>
 </head>
 <body>
 <div id="loader">
@@ -99,18 +99,34 @@ $("document").ready(function(){
 </header>
 <div id="main">
     <div id="banner_sec">
-    	<div id="content">
-          <div class="border_box">
-            <div class="box_skitter box_skitter_large">
-              <ul>
-                <li><a href="#cube"><img src="Images/Banner.jpg" class="circles" /></a><div class="label_text"><p>Banner 1</p></div></li>
-                <li><a href="#cubeRandom"><img src="Images/Banner.jpg" class="circlesInside" /></a><div class="label_text"><p>Banner 2</p></div></li>
-                <li><a href="#block"><img src="Images/Banner.jpg" class="circlesRotate" /></a><div class="label_text"><p>Banner 3</p></div></li>
-                <!-- <li><a href="#cubeStop"><img src="images/Banner.jpg" class="cubeShow" /></a><div class="label_text"><p>Banner 4</p></div></li> --> 
-              </ul>
-            </div>
-          </div>
-    	</div>
+    	<div class="fluid_container">
+        <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+            <div data-thumb="" data-src="Images/Banner/bnr1.jpg">
+            <div class="camera_caption fadeFromBottom">
+                    "<span class="lg-c1">RAD</span><span class="lg-c2">PING</span>” is a  Bio-Medical Servicing Company
+                </div></div>
+            <div data-thumb="" data-src="Images/Banner/bnr2.jpg">
+            <div class="camera_caption fadeFromBottom">
+                    "<span class="lg-c1">RAD</span><span class="lg-c2">PING</span>” IMAGING for Healthcare Specialists
+                </div></div>
+            <div data-thumb="" data-src="Images/Banner/bnr3.jpg">
+            <div class="camera_caption fadeFromBottom">
+                    "<span class="lg-c1">RAD</span><span class="lg-c2">PING</span>” IMAGING Specialists in Specializing in Radiology, Cardiology 
+                </div></div>
+            <div data-thumb="" data-src="Images/Banner/bnr4.jpg">
+            <div class="camera_caption fadeFromBottom">
+                    "<span class="lg-c1">RAD</span><span class="lg-c2">PING</span>” IMAGING Specialists in Critical Care 
+                </div></div>
+            <div data-thumb="" data-src="Images/Banner/bnr5.jpg">
+            <div class="camera_caption fadeFromBottom">
+                    "<span class="lg-c1">RAD</span><span class="lg-c2">PING</span>” IMAGING Specialists in Dental Equipment 
+                </div></div>
+            <div data-thumb="" data-src="Images/Banner/bnr6.jpg">
+            <div class="camera_caption fadeFromBottom">
+                    "<span class="lg-c1">RAD</span><span class="lg-c2">PING</span>” IMAGING for Over 20 Year’s Experiences
+                </div></div>
+        </div>
+    </div>
     </div>
     <div class="wrapper" id="home_sec">
     	<div class="main_cnt">

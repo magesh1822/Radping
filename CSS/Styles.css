@@ -114,6 +114,9 @@ div#nav_sec1{ width:72.5%; display:inline-block; float:left; position:relative; 
 div#main{ padding:0; margin1:0 0 50px 0; position:relative; top:75px; border:0px solid #f00; height:85%; width:100%; margin:0 auto; overflow-y:auto;}
 div#main div#banner_sec{ padding:0; margin:0; height:auto; width:100%; background:#fff; border:0px solid red; overflow:hidden;}
 div#main div#banner_sec img{ max-width:1280px; min-width:320px; width:100%; height:auto; max-height:100%; margin:0 auto; display:block;}
+/*div#sliderFrame{ padding:0; margin:0; width:100%; position:relative; border:1px solid red; display:block;}
+div#sliderFrame div#slider{ padding:0; margin:0;}
+div#sliderFrame div#slider img{}*/
 
 p{color:#737373; font:normal 18px abel; padding:0; margin:0 0 20px 0; text-align:justify; animation1: prg 1s ease 1;}
 /*p.hom{color:#737373; font:normal 30px abel; text-shadow:1px 1px 0px rgba(0,0,0,0.3); padding:0; margin:55px auto; text-align:center; width:90%;}*/
@@ -127,7 +130,7 @@ label {color:#fff; font:normal 18px source; padding:0; margin:0 0 10px 0; text-a
 .hom_left{ position:relative; float:left; display:inline-block; width:92%; padding:0; margin:0 50px; border:0px solid red;}
 .hom_right{ position:relative; float:left; display:inline-block; width:24%; padding:0; margin:0; border:0px solid red;}
 
-#blog_clint{ padding:0; margin:0 50px; border:0px solid red; clear:both; width:92%;}
+#blog_clint{ padding:0; margin:0 50px; border:0px solid red; clear:both; width:92%; display:none;}
 #blog_sec{ display:inline-block; width:72%; border:0px solid red; float:left;}
 #blog_sec:hover1{ background-color:#FFFFFF; opacity:50%;}
 .blog_head{color:#f48633; font:normal 25px zurich; padding:0; margin:0 0 10px 0; text-align:justify; animation: prg 1s ease 1;}
@@ -158,9 +161,9 @@ ul#blogsec_ul li:hover div.blg_title{ color:#f48633;}
 #our_clt label{ position:relative; display:block; padding:20px 0 0 10%;}
 #our_clt p{ width:70%; text-align:center; margin:0 auto; font-size:24px;}
 #our_clt img{ width:50%; max-width:100%; min-width1:320px; height:auto; margin:20px 5%; position:relative; float:left; top:0px; display:inline-block; box-shadow:2px 2px 20px rgba(0,0,0,0.5);}
-#clt_inr_lft{ width:49%; position:relative; float:left; margin:10px 0; display:block; border:0px solid red;}
+#clt_inr_lft{ width:49%; position:relative; float:left; margin:10px 0; display:none; border:0px solid red;}
 #clt_inr_lft img{ width:90%; box-shadow:5px 5px 2px rgba(0,0,0,0.5);}
-#clt_inr_rht{ width:49%; position:relative; float:right; margin:10px 0; display:block; border:0px solid red;}
+#clt_inr_rht{ width:49%; position:relative; float:right; margin:10px 0; display:none; border:0px solid red;}
 #clt_inr_rht img{ width:70%; margin:20% 0 0 10%;}
 
 #btm_contant{ position:relative; top:0px; width:97%; margin:0px 0 0 0; padding:20px; border:0px solid red; display:block; float:left; background-color:#FF9900;}
@@ -308,7 +311,7 @@ div.prod1 div img{ width:100%; height:auto; max-width:500px; min-width:200px;}
 
 .cont_sec_rgt h2{ font:bold 20px source; color:#CC3300; margin:10px 0 10px 20px;}
 iframe{ width:80%; height:300px; margin:0 auto; display:block; box-shadow1:5px 5px 10px rgba(0,0,0,0.2);}
-.cont_sec_rgt img{ width:30%; height:auto; margin:25px auto; padding:; display:block;}
+.cont_sec_rgt img{ width:80%; height:auto; margin:25px auto; padding:; display:block;}
 
 #prod_pop{ position:absolute; width:100%; height:100%; padding:0; margin:0; background-color:rgba(0,0,0,0.6); opacity:0; z-index:5000; top:0; overflow:hidden; display:none;}
 
@@ -381,7 +384,7 @@ div#mdul div label{ top:15px; width:60%;}
 .menu li a{ font: normal 20px zurich; color:#c9b1b1; cursor:pointer; transation: all .3s ease-in-out;  text-decoration: none; padding: 10px 0px; display: block;  width: 150px;  margin: auto; }
 #nav-btn{ display: block;}
 .cont_sec_left{ width:98%;}
-.cont_sec_rgt{ display:none;}
+.cont_sec_rgt{ width:98%; display:block;}
 #blog_sec{ width:95%;}
 #client_tell_sec{ width:95%;}
 .m_v_main_lft1, .m_v_main_lft2, .m_v_main_lft3, .m_v_main_lft4, .m_v_main_rht1, .m_v_main_rht2, .m_v_main_rht3, .m_v_main_rht4{ width:95%;}
@@ -404,7 +407,7 @@ div#nav_sec1{ background:none; overflow:none !important; width:70%; }
 .menu li a{ font: normal 20px zurich; color:#c9b1b1; cursor:pointer; transation: all .3s ease-in-out;  text-decoration: none; padding: 10px 0px; display: block;  width: 150px;  margin: auto; }
 #nav-btn{ display: block; }
 .cont_sec_left{ width:98%;}
-.cont_sec_rgt{ display:none;}
+.cont_sec_rgt{ width:98%; display:block;}
 #btm_contant div{ width:45%;}
 #btm_contant div b{ width:60%}
 .m_v_main_lft1, .m_v_main_lft2, .m_v_main_lft3, .m_v_main_lft4, .m_v_main_rht1, .m_v_main_rht2, .m_v_main_rht3, .m_v_main_rht4{ width:95%;}
@@ -418,8 +421,8 @@ ul#prod_tab li{ width:20%;}
 #blog_sec{ width:95%;}
 #client_tell_sec{ width:95%;}
 div#mdul div#tit{ width:30%; height:300px; position:absolute; left:-2px; top:12%; border-radius:0; margin:0; padding:0; display:block; border:2px solid #fff; background-color:#f48533;background-image:none; border-radius:0 20px 20px 0;}
-div#mdul div#tit h1{ margin:90% 0 0 0;}
-div#mdul div label{ top:15px; left:15%; width:60%;}
+div#mdul div#tit h1{ margin:40% 0 0 0;}
+div#mdul div label{ top:20px; left:15%; width:60%;}
 ul.emp_shuffleList li label{ margin:10px 0;}
 ul.emp_shuffleList li span{ margin:10px 0;}
 ul.emp_shuffleList li p{ margin:0 15px;}
@@ -436,7 +439,7 @@ div#nav_sec1{ background:none; overflow:none !important; width:65%; }
 .menu li a{ font: normal 20px zurich; color:#c9b1b1; cursor:pointer; transation: all .3s ease-in-out;  text-decoration: none; padding: 10px 0px; display: block;  width: 150px;  margin: auto; }
 #nav-btn{ display: block; }
 .cont_sec_left{ width:98%;}
-.cont_sec_rgt{ display:none;}
+.cont_sec_rgt{ width:98%; display:bock;}
 #clint_logo ul#imageList li{ width:48.5%;}
 #btm_contant div{ width:90%;}
 #btm_contant div b{ width:60%}
