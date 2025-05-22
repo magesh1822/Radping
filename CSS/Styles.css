@@ -384,6 +384,9 @@ iframe{ width:80%; height:300px; margin:0 auto; display:block; box-shadow1:5px 5
 #client_tell_sec{ width:38%;}
 div#mdul div#tit{ left:43%;}
 div#mdul div label{ top:15px; width:60%;}
+ul.emp_ceo li label{ font:bold 30px abel; display:block; color:#000; margin:0px 0; position:relative; top:-70px;}
+ul.emp_ceo li span{ font:normal 25px source; display:block; color:#666666; margin:0px 0; position:relative; top:-70px;}
+ul.emp_member li{ margin:70px 25px;}
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -407,6 +410,10 @@ div#mdul div label{ top:15px; width:60%;}
 div#mdul div#tit{ left:40%; top:25px;}
 div#mdul div label{ top:15px; width:60%;}
 .prod_pop_inr{ width:65%;}
+ul.emp_ceo li{ width:90%;}
+ul.emp_ceo li label{ font:bold 30px abel; display:block; color:#000; margin:0px 0; position:relative; top:-110px;}
+ul.emp_ceo li span{ font:normal 25px source; display:block; color:#666666; margin:0px 0; position:relative; top:-110px;}
+ul.emp_member li{ margin:70px 25px;}
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -439,6 +446,10 @@ ul.emp_shuffleList li label{ margin:10px 0;}
 ul.emp_shuffleList li span{ margin:10px 0;}
 ul.emp_shuffleList li p{ margin:0 15px;}
 .prod_pop_inr{ width:80%;}
+ul.emp_ceo li{ width:90%;}
+ul.emp_ceo li label{ font:bold 30px abel; display:block; color:#000; margin:0px 0; position:relative; top:-100px;}
+ul.emp_ceo li span{ font:normal 25px source; display:block; color:#666666; margin:0px 0; position:relative; top:-100px;}
+ul.emp_member li{ margin:70px 15px;}
 }
 
 /* Extra small devices (phones, less than 576px) */
@@ -480,5 +491,9 @@ ul.emp_shuffleList li label{ margin:10px 0;}
 ul.emp_shuffleList li span{ margin:10px 0;}
 ul.emp_shuffleList li p{ margin:0 15px;}
 .prod_pop_inr{ width:80%;}
+ul.emp_ceo li{ width:90%;}
+ul.emp_ceo li label{ font:bold 30px abel; display:block; color:#000; margin:0px 0; position:relative; top:-70px;}
+ul.emp_ceo li span{ font:normal 25px source; display:block; color:#666666; margin:0px 0; position:relative; top:-70px;}
+ul.emp_member li{ margin:70px 20%;}
 }
 
