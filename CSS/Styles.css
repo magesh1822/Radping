@@ -492,8 +492,8 @@ ul.emp_shuffleList li span{ margin:10px 0;}
 ul.emp_shuffleList li p{ margin:0 15px;}
 .prod_pop_inr{ width:80%;}
 ul.emp_ceo li{ width:90%;}
-ul.emp_ceo li label{ font:bold 30px abel; display:block; color:#000; margin:0px 0; position:relative; top:-70px;}
-ul.emp_ceo li span{ font:normal 25px source; display:block; color:#666666; margin:0px 0; position:relative; top:-70px;}
+ul.emp_ceo li label{ font:bold 30px abel; display:block; color:#000; margin:0px 0; position:relative; top:-40px; white-space:nowrap;}
+ul.emp_ceo li span{ font:normal 25px source; display:block; color:#666666; margin:0px 0; position:relative; top:-40px;}
 ul.emp_member li{ margin:70px 20%;}
 }
 
