@@ -368,6 +368,29 @@ $(".prod_pop_inr button").click(function(){
 			$("#p_cc_1_prod, #p_cc_2_prod, #p_cc_3_prod, #p_cc_4_prod, #p_cc_5_prod").hide();
 		});
 
+//
+$("ul#prodtab_list li").click(function(){
+			$("ul#prodtab_list li").removeClass("seltab");
+			$(this).addClass("seltab");
+		});
+
+	$("ul#prodtab_list li:nth-child(1)").click(function(){
+			$("#galler_radi").css({"position": "relative", "top": "100px", "opacity": "0"}).show().animate({top: '0px', opacity: '1'}, "slow");
+			$("#galler_dental").css({"position": "relative", "top": "100px", "opacity": "0"}).show().animate({top: '0px', opacity: '1'}, "slow");
+			$("#galler_cc").css({"position": "relative", "top": "100px", "opacity": "0"}).show().animate({top: '0px', opacity: '1'}, "slow");
+		});
+	$("ul#prodtab_list li:nth-child(2)").click(function(){
+			$("#galler_radi").css({"position": "relative", "top": "100px", "opacity": "0"}).show().animate({top: '0px', opacity: '1'}, "slow");
+			$("#galler_dental, #galler_cc").hide();
+		});
+	$("ul#prodtab_list li:nth-child(3)").click(function(){
+			$("#galler_dental").css({"position": "relative", "top": "100px", "opacity": "0"}).show().animate({top: '0px', opacity: '1'}, "slow");
+			$("#galler_radi, #galler_cc").hide();
+		});
+	$("ul#prodtab_list li:nth-child(4)").click(function(){
+			$("#galler_cc").css({"position": "relative", "top": "100px", "opacity": "0"}).show().animate({top: '0px', opacity: '1'}, "slow");
+			$("#galler_radi, #galler_dental").hide();
+		});
 
 
 //

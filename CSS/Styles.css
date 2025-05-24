@@ -339,15 +339,31 @@ iframe{ width:80%; height:300px; margin:0 auto; display:block; box-shadow1:5px 5
 
 /* event */
 
-#yr_sec{ width:20%; display:inline-block; border:0px solid red; position:relative; left:5%;}
-#yr_sec ul{ padding:0; margin:0;}
-#yr_sec ul#yr_list{ display:block;}
-#yr_sec ul#yr_list li{ list-style:none; padding:0; margin:10px 0; border-radius:0 15px 15px 0; background:#737373; cursor:pointer; width:80%;}
-#yr_sec ul#yr_list li span{ padding:5px 7px; text-align:center; display:inline-block; background:#fff; font:bold 15px source !important; color:#737373; letter-spacing:2px;}
-#yr_sec ul#yr_list li label{ padding:0; margin:0; font:bold 15px abel !important; color:#fff; text-indent:20px; display:inline-block; letter-spacing:5px; width:80%; text-align:center; cursor:pointer;}
-#yr_sec ul#yr_list li:hover{}
-#yr_sec ul#yr_list li:hover span{}
-#yr_sec ul#yr_list li:hover label{}
+#prod_list_sec{ width:90%; display:block; border:1px solid red; position:relative; margin:20px auto;}
+#prod_list_sec ul#prodtab_list{ display:block; padding:0; margin:0; clear:both;}
+#prod_list_sec ul#prodtab_list li{ list-style:none; padding:10px 10px; margin:10px 5px 0 5px; border-radius:0; background:#f48533; cursor:pointer; font:normal 15px zurich; text-align:center; cursor:pointer; width:100px; display:inline-block; float:left; color:#fff; transition: all 0.8s ease-in-out;}
+#prod_list_sec ul#prodtab_list li.seltab{ background:#fff; color:#f48533; border-top:1px solid #f48533; border-left:1px solid #f48533; border-right:1px solid #f48533;}
+#prod_list_sec ul#prodtab_list li:hover{ background:#fff; color:#f48533; border-top:1px solid #f48533;}
+#prod_imgsec{background-image:linear-gradient(to top, #fff 0%, #f48533 100%); width:90%; padding:3px; margin:1px auto; display:block; clear:both;}
+#prod_imgsec_inr{ background:#fff; width:100%; display:block;}
+#galler_radi{ padding:0; margin:0;}
+#galler_dental{ padding:0; margin:0;}
+#galler_cc{ padding:0; margin:0;}
+ul.gallery_img{ list-style:none; padding:0; margin:0; display:block; margin:0 auto;}
+.gallery_img li{ padding:0; margin:10px; width:30%; cursor:pointer; display:inline-block; transition: all 0.8s ease-in-out; position:relative;}
+.gallery_img li img{ width:100%; height:auto; transition: all 0.8s ease-in-out;}
+.gallery_img li::after{content:""; position: absolute; bottom: 50px; left: 40%; width: 0; height: 0; border-left: 35px solid transparent; border-right: 35px solid transparent;
+  border-bottom: 35px solid #f48533; transition: all 0.8s ease-in-out; z-index:1;}
+.glry_img_details{ padding:10px; margin:0; display:block; background:#f48533; cursor:pointer; position:relative; z-index:1000;}
+.glry_img_details label{ display:block; font:normal 20px zurich; color:#fff; z-index:1000;}
+.glry_img_details p{ font:normal 15px source; width:95%; color:#FFFFFF; text-align:left; margin:0; z-index:1000;}
+.gallery_img li:hover{ box-shadow:0px 0px 20px rgba(0,0,0,0.3);}
+
+.gallery_img li:hover::after{content:""; bottom:70px;}
+
+#prod_list_sec ul#prodtab_list li span{ padding:5px 7px; text-align:center; display:inline-block; background:#fff; font:bold 15px source !important; color:#737373; letter-spacing:2px;}
+#prod_list_sec ul#prodtab_list li label{ padding:0; margin:0; font:bold 15px abel !important; color:#fff; text-indent:20px; display:inline-block; letter-spacing:5px; width:80%; text-align:center; cursor:pointer;}
+
 
 /* HTML: <div class="loader"></div> */
 .loader {
@@ -414,6 +430,7 @@ ul.emp_ceo li{ width:90%;}
 ul.emp_ceo li label{ font:bold 30px abel; display:block; color:#000; margin:0px 0; position:relative; top:-110px;}
 ul.emp_ceo li span{ font:normal 25px source; display:block; color:#666666; margin:0px 0; position:relative; top:-110px;}
 ul.emp_member li{ margin:70px 25px;}
+.gallery_img li{ width:45%;}
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -450,6 +467,7 @@ ul.emp_ceo li{ width:90%;}
 ul.emp_ceo li label{ font:bold 30px abel; display:block; color:#000; margin:0px 0; position:relative; top:-100px;}
 ul.emp_ceo li span{ font:normal 25px source; display:block; color:#666666; margin:0px 0; position:relative; top:-100px;}
 ul.emp_member li{ margin:70px 15px;}
+.gallery_img li{ width:45%;}
 }
 
 /* Extra small devices (phones, less than 576px) */
@@ -495,5 +513,7 @@ ul.emp_ceo li{ width:90%;}
 ul.emp_ceo li label{ font:bold 30px abel; display:block; color:#000; margin:0px 0; position:relative; top:-40px; white-space:nowrap;}
 ul.emp_ceo li span{ font:normal 25px source; display:block; color:#666666; margin:0px 0; position:relative; top:-40px; white-space:nowrap;}
 ul.emp_member li{ margin:70px 20%;}
+#prod_list_sec{ display:none;}
+.gallery_img li{ width:80%; display:block; margin:0 auto;}
 }
 
