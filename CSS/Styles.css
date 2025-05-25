@@ -339,7 +339,7 @@ iframe{ width:80%; height:300px; margin:0 auto; display:block; box-shadow1:5px 5
 
 /* event */
 
-#prod_list_sec{ width:90%; display:block; border:1px solid red; position:relative; margin:20px auto;}
+#prod_list_sec{ width:90%; display:block; border:0px solid red; position:relative; margin:20px auto;}
 #prod_list_sec ul#prodtab_list{ display:block; padding:0; margin:0; clear:both;}
 #prod_list_sec ul#prodtab_list li{ list-style:none; padding:10px 10px; margin:10px 5px 0 5px; border-radius:0; background:#f48533; cursor:pointer; font:normal 15px zurich; text-align:center; cursor:pointer; width:100px; display:inline-block; float:left; color:#fff; transition: all 0.8s ease-in-out;}
 #prod_list_sec ul#prodtab_list li.seltab{ background:#fff; color:#f48533; border-top:1px solid #f48533; border-left:1px solid #f48533; border-right:1px solid #f48533;}
